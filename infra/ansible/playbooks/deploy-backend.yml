@@ -122,6 +122,8 @@
           # AWS Configuration
           aws.access-key={{ aws_access_key }}
           aws.secret-key={{ aws_secret_key }}
+          aws.s3.bucket-name={{ aws_s3_bucket }}
+          aws.s3.region={{ aws_s3_region }}
 
     - name: Update systemd service to use external config
       copy:
